@@ -45,7 +45,6 @@ jobs:
 
     - name: 2. Download Refactify CLI from Releases
       env:
-        GH_TOKEN: ${{ secrets.REFACTIFY_ACTION_KEY }}
         REFACTIFY_VERSION: ${{ inputs.refactify_version }}
       run: |
         cd target-project
